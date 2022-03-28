@@ -19,18 +19,19 @@
             <div class="border border-light row">
 
                 <div class="boder"></div>
-                <section class="d-inline-flex">
+                <section class="d-flex justify-content-between">
                     <h1> <i class="fa-brands fa-instagram"></i> Instagram</h1>
 
                     <!-- Button trigger modal -->
-                    <section>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Creat a new
-                        </button>
+                    <section class="d-flex justify-content-end">
+                        <dir class="d-flex">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Creat a new
+                            </button>
 
-                        <!-- Modal -->
-                        <section class=" row  d-flex justify-content-end">
+                            <!-- Modal -->
+
                             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
                                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                 aria-hidden="true">
@@ -56,53 +57,55 @@
                                     </div>
                                 </div>
                             </div>
+                        </dir>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            ...
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Understood</button>
-                                        </div>
+                        <!-- Modal -->
+                        <dir class="d-flex">
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Understood</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
 
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-gear"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <div class="boder boder-light ">
-                                        <li><a class="dropdown-item boder" href="#">Log out </a></li>
-                                    </div>
-                                </ul>
-                            </div>
-                        </section>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <div class="boder boder-light ">
+                                    <li><a class="dropdown-item boder" href="#">Log out </a></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </dir>
                     </section>
+                </section>
             </div>
 
 
             <section>
                 <!-- Nav tabs -->
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
                             type="button" role="tab" aria-controls="home" aria-selected="true"><i
@@ -163,30 +166,87 @@
 
                     <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <span class="container ">
-                            <main class="mx-auto my-5 card" style="width: 40rem;">
-                                <section class="d-inline p-0 ">
-                                    <div class="flex-start p-0">Dog Magazine </div>
-                                    <div class="d-flex justify-content-end p-0">3/22</div>
+                            <main class="mx-auto my-5 card" style="width: 40rem; ">
+                                <section class="d-flex justify-content-between m-2">
+                                    <div> Today Highlight </div>
+                                    <div class="d-flex justify-content-end">3/22</div>
                                 </section>
-                                <div>
-                                    <img src="https://picsum.photos/600/400">
+                                <div class="d-flex justify-content-center ">
+                                    <img src="https://picsum.photos/635/400">
                                 </div>
-                                <div class="d-flex flex-start">500 likes</div>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                                <div class="d-flex flex-start p-1">500 likes</div>
+                                <p class="p-1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
                                     roots
                                     in a piece of classical Latin literature from 45 BC, making it over 2000
                                     years
                                     old.</p>
-                                <footer class="row ">
-                                    <section class="d-inline-flex  p-10">
-                                        <div><i class="fa-regular fa-heart"></i></div>
+                                <footer class="d-flex justify-content-between p-1">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <div><i class="fa-regular fa-heart p-2"></i></div>
+                                        </div>
                                         <div>comment.....</div>
                                     </section>
                                     <div class="d-flex justify-content-end"><i
-                                            class="fa-regular fa-ellipsis-vertical"></i></div>
+                                            class="fa-solid fa-ellipsis-vertical fa-regular"></i></div>
                                 </footer>
-                                <div></div>
+
                             </main>
+
+                            <main class="mx-auto my-5 card" style="width: 40rem; ">
+                                <section class="d-flex justify-content-between m-2">
+                                    <div> Friday planning </div>
+                                    <div class="d-flex justify-content-end">3/29</div>
+                                </section>
+                                <div class="d-flex justify-content-center ">
+                                    <img src="https://picsum.photos/635/400">
+                                </div>
+                                <div class="d-flex flex-start p-1">500 likes</div>
+                                <p class="p-1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                                    roots
+                                    in a piece of classical Latin literature from 45 BC, making it over 2000
+                                    years
+                                    old.</p>
+                                <footer class="d-flex justify-content-between p-1">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <div><i class="fa-regular fa-heart p-2"></i></div>
+                                        </div>
+                                        <div>comment.....</div>
+                                    </section>
+                                    <div class="d-flex justify-content-end"><i
+                                            class="fa-solid fa-ellipsis-vertical fa-regular"></i></div>
+                                </footer>
+
+                            </main>
+                            <main class="mx-auto my-5 card" style="width: 40rem; ">
+                                <section class="d-flex justify-content-between m-2">
+                                    <div> Next week event</div>
+                                    <div class="d-flex justify-content-end">4/02</div>
+                                </section>
+                                <div class="d-flex justify-content-center ">
+                                    <img src="https://picsum.photos/635/400">
+                                </div>
+                                <div class="d-flex flex-start p-1">500 likes</div>
+                                <p class="p-1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                                    roots
+                                    in a piece of classical Latin literature from 45 BC, making it over 2000
+                                    years
+                                    old.</p>
+                                <footer class="d-flex justify-content-between p-1">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <div><i class="fa-regular fa-heart p-2"></i></div>
+                                        </div>
+                                        <div>comment.....</div>
+                                    </section>
+                                    <div class="d-flex justify-content-end"><i
+                                            class="fa-solid fa-ellipsis-vertical fa-regular"></i></div>
+                                </footer>
+
+                            </main>
+
+
                         </span>
                     </div>
 
